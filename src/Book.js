@@ -10,7 +10,6 @@ class Book extends Component {
 
     return(
       <li>
-        {/* TODO: separate compoent for book */}
         <div className="book">
           <div className="book-top">
             <div className="book-cover" style={{ width: 128, height: 188, backgroundImage: `url(${this.props.book.imageLinks.thumbnail})`
