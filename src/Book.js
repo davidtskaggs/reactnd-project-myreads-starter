@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import ShelfChanger from './ShelfChanger'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import ShelfChanger from './ShelfChanger';
 
 class Book extends Component {
   static propTypes = {
