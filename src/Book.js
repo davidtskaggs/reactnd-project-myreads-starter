@@ -6,9 +6,7 @@ class Book extends Component {
   static propTypes = {
     books: PropTypes.array.isRequired
   }
-
   render() {
-
     return(
       <li>
         <div className="book">
@@ -21,7 +19,6 @@ class Book extends Component {
           {this.props.book.authors.map((author) => (
             <div className="book-authors">{author}</div>
           ))}
-
         </div>
       </li>
     )
