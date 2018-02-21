@@ -52,6 +52,7 @@ class BooksApp extends React.Component {
                   value={(this.state.query)}
                   onChange={(event) => this.updateQuery(event.target.value)}
                 />
+                {/* Remove JSON.stringify line after finished debugging */}
                 {JSON.stringify(this.state.query)}
               </div>
             </div>
