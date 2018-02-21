@@ -29,6 +29,12 @@ class BooksApp extends React.Component {
     });
   }
 
+  showSearchResults = (book) => {
+    this.setState((state) => ({
+      books: state.books.filter((b) => b.name !== book.name)
+    }))
+  }
+
   render() {
     return (
       <div className="app">
