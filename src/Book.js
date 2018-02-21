@@ -4,7 +4,7 @@ import ShelfChanger from './ShelfChanger';
 
 class Book extends Component {
   static propTypes = {
-    books: PropTypes.array.isRequired
+    book: PropTypes.object.isRequired
   }
   render() {
     return(
