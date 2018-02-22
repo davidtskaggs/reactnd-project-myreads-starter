@@ -17,8 +17,6 @@ class BooksApp extends React.Component {
      * pages, as well as provide a good URL they can bookmark and share.
      */
     books: []
-    // showSearchPage: false
-
   }
 
   componentDidMount () {
@@ -36,9 +34,6 @@ class BooksApp extends React.Component {
         <Route path="/search" render={() =>(
           <Search />
         )}/>
-
-
-
       </div>
     )
   }
