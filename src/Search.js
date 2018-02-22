@@ -7,6 +7,17 @@ class Search extends Component {
   state = {
     query: ''
   }
+
+  updateQuery = (query) => {
+    this.setState({ query: query.trim() })
+  }
+
+  showSearchResults = (book) => {
+    this.setState((state) => ({
+      books: state.books.filter((b) => b.name !== book.name)
+    }))
+  }
+  
   render() {
     return(
       <div className="search-books">
